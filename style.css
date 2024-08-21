@@ -71,13 +71,13 @@
         margin-left: -2px;
         margin-top: 5px;
         height: 100vh;
-        width: 99vw;
+        width: 100vw;
         overflow: hidden;
         background-color: rgba(38, 38, 72, 0.701);
         /* Prevents any content overflow */
     }
     .homevideo video{
-        width: 99vw;
+        width: 100vw;
         height: 100vh;
         object-fit: cover; /* Ensures the video covers the entire viewport */
         position: absolute; /* Position the video absolutely */
@@ -85,7 +85,7 @@
     }
     .home1{
         position: absolute;
-        top: 25%;  /* Centers the text vertically */
+        top: 20%;  /* Centers the text vertically */
         left: 50%; /* Centers the text horizontally */
         /* transform: translate(-50%, -50%); Offsets the alignment so it's perfectly centered */
         z-index: 2; /* Ensures the text is above the video */
@@ -144,16 +144,16 @@
     } 
     .home2a,.home2b,.home2c{
         height: 55px;
-        width: 250px;
-        margin-right: 30px;
-        margin-left:35px;
+        width: 300px;
+        margin-right: auto;
+        margin-left:auto;
         border: 2px solid black;
         background-color: rgb(3, 3, 50);
         display:flex;
         flex-direction: column;
         justify-content: center; 
         text-align: center;
-        margin-top: 15%;
+        margin-top: 10%;
     }
     .hm2a,.hm2b,.hm2c{
         display: flex;
@@ -168,7 +168,7 @@
         margin-right: 15px; /* Space between image and text */
     }
     .sp1,.sp2,.sp3{
-        font-size: 20px; 
+        font-size: 18px; 
     }
     .p1,.p2,.p3{
         display: none;
@@ -185,17 +185,18 @@
     }
     .home2a:hover, .home2b:hover, .home2c:hover{
         margin-top: 0%;
-        height: 380px;
+        height: 250px;
         background-color: #f5a425;
     }
     .home2a:hover .p1, .home2b:hover .p2, .home2c:hover .p3 {
         display: block; /* Display the paragraph on hover */
         margin-top: 5px; /* Add some space between the title and paragraph */
-        padding: 15px;
+        padding: 10px;
     }
     .home2a:hover a, .home2b:hover a, .home2c:hover a {
         display: block; /* Display the link on hover */
-        margin-top: 5px; /* Add some space between the paragraph and link */
+        margin-top: 1px; /* Add some space between the paragraph and link */
+        padding: 0;
     }
 
 
@@ -249,36 +250,36 @@
     .s21a h3{
         color: white;
         font-size:36px;
-        margin-left:80px;
+        margin-left:30px;
         font-weight:600;
     }
     .s21b h3{
         color: white;
         font-size:36px;
-        margin-left:80px;
+        margin-left:30px;
         font-weight:600;
     }
     .s21c h3{
         color: white;
         font-size:36px;
-        margin-left:80px;
+        margin-left:30px;
         font-weight:600;
     }
     .s21a p{
         color:white;
-        margin-left:80px;
+        margin-left:30px;
         margin-top:20px;
         font-size:16px;
     }
     .s21b p{
         color:white;
-        margin-left:80px;
+        margin-left:30px;
         margin-top:20px;
         font-size:16px;
     }
     .s21c p{
         color:white;
-        margin-left:80px;
+        margin-left:30px;
         margin-top:20px;
         font-size:16px;
     }
