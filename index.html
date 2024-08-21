@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grad School</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        /* Header Section */
+        header{
+            height:8vh;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            z-index: 12;
+        }
+        .navbar{
+            width: 100%;
+            height: 10vh;
+            display: flex;
+            justify-content: space-between;
+            background-color: rgba(22, 34, 57, 0.95);
+            padding: 10px;
+            padding-top: 15px; 
+        }
+        .gs{
+            text-decoration: none;
+            color: white;
+            font-size: 38px;
+            font-weight: 600;
+            font-family: 'Arial', sans-serif; 
+        }
+        .grade{
+            color: #f5a425; 
+            padding-right:10px;
+        }
+        .navcls{
+            display: flex;
+            gap: 25px;
+            font-size: 18px;
+            padding-top:10px ;
+            margin-right: 25px;
+        }
+        .navcls li {
+            list-style-type: none;
+        }
+        .navcls li a{
+            color:white;
+            text-decoration: none;
+            font-family: 'Arial', sans-serif; 
+            padding: 10px;
+        }
+        .navcls li a:hover{
+            border: 2px solid #f5a425;
+        }
+
+
+
+
+
+
+
+
+        /* Home Section */
+        .home{
+            margin-left: -2px;
+            margin-top: 5px;
+            height: 100vh;
+            width: 99vw;
+            overflow: hidden;
+            background-color: rgba(38, 38, 72, 0.701);
+            /* Prevents any content overflow */
+        }
+        .homevideo video{
+            width: 99vw;
+            height: 100vh;
+            object-fit: cover; /* Ensures the video covers the entire viewport */
+            position: absolute; /* Position the video absolutely */
+            z-index: -3;
+        }
+        .home1{
+            position: absolute;
+            top: 45%;  /* Centers the text vertically */
+            left: 50%; /* Centers the text horizontally */
+            transform: translate(-50%, -50%); /* Offsets the alignment so it's perfectly centered */
+            z-index: 2; /* Ensures the text is above the video */
+            color: white; /* Set text color to make it stand out against the video */
+            text-align: center;
+            line-height: 1.5;
+        }
+        .home1 h6{
+            font-size:22px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 100;
+            font-family-sans-serif: "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            font-family-monospace: "Liberation Mono", "Courier New", monospace;
+        }
+        .home1 h1{
+            font-size:58px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 800;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .h1 span{
+            font-size:58px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 800;
+            color: #f5a425; 
+            font-family: 'Montserrat', sans-serif;
+        }
+        .btn1{
+            margin-top: 1.5vh;
+        }
+        .btn1a{
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: 300;
+            text-transform: uppercase;
+            color: white;
+            background-color: #f5a425;
+            text-decoration: none;
+            margin-top:2.5vh;
+        }
+        .home2{ 
+            position: absolute;
+            top: 60%;  /* Centers the text vertically */
+            left: 10%; /* Centers the text horizontally */ 
+            z-index: 2; /* Ensures the text is above the video */
+            color: white; /* Set text color to make it stand out against the video */
+            text-align: center;
+            line-height: 1.5; 
+            display: flex;
+        } 
+        .home2a,.home2b,.home2c{
+            height: 75px;
+            width: 350px;
+            margin-right: 50px;
+            margin-left:50px;
+            border: 2px solid black;
+            background-color: rgb(3, 3, 50);
+            display:flex;
+            flex-direction: column;
+            justify-content: center; 
+            text-align: center;
+            margin-top: 15%;
+        }
+        .hm2a,.hm2b,.hm2c{
+            display: flex;
+            align-items: center; /* Center content vertically */
+            justify-content: center;
+        }
+        .ic1,.ic2,.ic3{
+            /* top: 50%; */
+            margin-top:6px;
+            width: 30px; /* Adjusted size for better visibility */
+            height: 30px; /* Adjusted size for better visibility */
+            margin-right: 15px; /* Space between image and text */
+        }
+        .sp1,.sp2,.sp3{
+            font-size: 20px; 
+        }
+        .p1,.p2,.p3{
+            display: none;
+            color: white;
+            text-align: justify;
+            font-size: 16px;
+        }
+        .home2a a,.home2b a,.home2c a{
+            /* text-decoration: none; */
+            display: none;
+            color: white;
+            font-size: 20px;
+            font-weight: 500;
+        }
+        .home2a:hover, .home2b:hover, .home2c:hover{
+            margin-top: 0%;
+            height: 280px;
+            background-color: #f5a425;
+        }
+        .home2a:hover .p1, .home2b:hover .p2, .home2c:hover .p3 {
+            display: block; /* Display the paragraph on hover */
+            margin-top: 10px; /* Add some space between the title and paragraph */
+            padding: 25px;
+        }
+        .home2a:hover a, .home2b:hover a, .home2c:hover a {
+            display: block; /* Display the link on hover */
+            margin-top: 10px; /* Add some space between the paragraph and link */
+        }
+
+
+
+
+
+
+
+
+
+        /* Section 2  */
+        .s2{
+            background-image: url(bgimgs/choosing-bg.jpg);
+            width:100%;
+            height:100vh;
+        }
+        .s21a{
+            width:100%;
+            height:100vh;
+        }
+        .s21,.s22,.s23{
+            width:65%;
+            height:70vh;
+            display: flex;
+            align-items: center;
+            margin: auto;
+            margin-top:120px;
+        }
+        .s21 img{
+            margin:5px; 
+        }
+        .s22 img{
+            margin:5px; 
+        }
+        .s23 img{
+            margin:5px; 
+        }
+        .s21a, .s21b, .s21c{
+            color: white; 
+        }
+        .s21a{
+            margin-top:550px;
+        }
+        .s21a h3{
+            color: white;
+            font-size:36px;
+            margin-left:80px;
+            font-weight:600;
+        }
+        .s21b h3{
+            color: white;
+            font-size:36px;
+            margin-left:80px;
+            font-weight:600;
+        }
+        .s21c h3{
+            color: white;
+            font-size:36px;
+            margin-left:80px;
+            font-weight:600;
+        }
+        .s21a p{
+            color:white;
+            margin-left:80px;
+            margin-top:20px;
+            font-size:16px;
+        }
+        .s21b p{
+            color:white;
+            margin-left:80px;
+            margin-top:20px;
+            font-size:16px;
+        }
+        .s21c p{
+            color:white;
+            margin-left:80px;
+            margin-top:20px;
+            font-size:16px;
+        }
+        .as2{
+            text-decoration: none;
+            color: rgb(39, 156, 229);
+        } 
+        .as3{
+            text-decoration: none;
+            color: rgb(39, 156, 229);
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .s31{
+            width:100%;
+            height:100vh;
+            background-image: url(bgimgs/coming-soon-bg.jpg);
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .s31 h1{
+            width:40%;
+            color:white;
+            padding:20px 40px 20px 10px;
+            font-size:36px;
+        }
+        .formbox{
+            width:380px;
+            height:450px;
+            border: 2px solid rgba(255, 255, 255, 0.55) ;
+            background-color: rgba(145, 145, 145, 0.146);
+        }
+
+        .formbox p{
+            text-align: center;
+            font: size 24px;
+            padding: 20px;
+            color: rgba(255, 255, 255, 0.838);
+            border-bottom:2px solid rgba(255, 255, 255, 0.55);
+            background-color: rgba(159, 158, 158, 0.251);
+        }
+        .forms{
+            margin-top: 35px;
+        }
+
+        .itext{
+            background-color:rgba(159, 158, 158, 0.251);
+            border:0;
+            padding:10px;  
+            margin:10px 20px;
+            width: 90%;
+        }
+        .iemail{
+            background-color:rgba(159, 158, 158, 0.251);
+            border:0;
+            padding:10px;
+            margin:20px 20px; 
+            width: 90%;
+        }
+        .inum{
+            background-color:rgba(159, 158, 158, 0.251);
+            border:0;
+            padding:10px;
+            margin:20px 20px;
+            width: 90%;
+        }
+        input::placeholder{
+            color: white;
+        }
+
+        .btn{
+            color: white;
+            padding:10px;
+            background-color: #f5a425;
+            margin-top: 15px;
+            margin-left: 40%;
+        }
+
+
+
+
+
+
+
+
+
+
+
+        .s41{
+            width:100%;
+            height:100vh;
+            background-image: url(bgimgs/choosing-bg.jpg);
+        }
+
+        .card {
+            background-color: #1C2833;
+            color: #FFFFFF;
+            border: none;
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card-title {
+            color: orange;
+        }
+
+        .card-text {
+            color: #CCCCCC;
+        }
+
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: orange;
+        }
+        
+
+        .carousel-indicators [data-bs-target] {
+            background-color: orange;
+        }
+        .text{
+            text-decoration:none;
+            color:orange;
+        }
+        .col-md-2{
+            width:18%;
+            height:45%;
+        }.row{
+            width:100%;
+        }
+ 
+        .h3course{
+            width:280px; 
+            text-align: center; 
+            color: white;
+            margin-top: 25px; 
+            margin-left:40%;
+            margin-bottom:15vh;
+            padding: 10px;
+            border:1px solid white;
+        }
+
+
+
+
+
+
+        
+ 
+
+
+        .s51{
+            width:100%;
+            height:100vh;
+            background-image: url(bgimgs/video-bg.jpg);
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .s51a{
+            width:45%;
+        }
+        .s5a1{
+            color: white;
+            padding: 5px;
+        }
+        .s5a2{
+            color: white;
+            font-size:32px;
+            padding: 5px;
+        }
+        .s5a3{
+            color: #f5a425;
+            font-size: 32px;
+            padding: 5px;
+        }
+        .s5a4{
+            padding: 5px;
+            color: white;
+            line-height:1.6em;
+            font-size:16px;
+        }
+        .s5a5{
+            margin-top:5px;
+            padding: 5px;
+            line-height:1.6em;
+            color: white;
+            font-size: 16px;
+            margin-bottom:25px;
+        }
+        /* Center the thumbnail on the page */
+        .thumbnail-container {
+            margin-left:25px;
+            width: 20%; 
+            height:auto; 
+        }
+        .vt{
+            width:450px;
+            height:450px;
+        }
+        .external{
+            text-decoration:none;
+            padding: 12px;
+            color: white;
+            background-color:#f5a425; 
+            font-size:14px;
+        }
+
+
+
+
+
+
+
+
+
+        .s6{
+            width:100%;
+            height:100vh;
+            background-image: url(bgimgs/contact-bg.jpg);
+        }
+
+        .s6 h3{
+            width:280px; 
+            text-align: center; 
+            color: white;
+            margin-top: 25px; 
+            margin-left:40%;
+            padding: 5px;
+            border:1px solid white;
+        }
+
+        .s61{
+            margin-top:45px;
+            display:flex;
+            justify-content: center;
+        }
+
+        .formbox2{
+            margin-right:15px;
+            width:500px;
+            height:450px;
+            background-color: rgba(145, 145, 145, 0.146); 
+        }
+        .fname{
+            width:40%;
+            margin :5%;
+            margin-top:12%;
+            background-color:rgba(159, 158, 158, 0.251);
+            border:0;
+            padding:10px; 
+        }
+        .fmail{
+            background-color:rgba(159, 158, 158, 0.251);
+            border:0;
+            padding:10px; 
+        }
+        .fta{
+            width:90%;
+            margin:2%;
+            margin-left:5%;
+            background-color:rgba(159, 158, 158, 0.251);
+            border:0;
+            padding:10px; 
+        }
+        textarea::placeholder{
+            color: white;
+        }
+        .fbtn{
+            color: white;
+            background-color: #f5a425;
+            margin:2%;
+            margin-left:5%;
+            padding:10px;
+        }
+
+
+
+
+
+
+
+
+        footer{
+            height:10vh;
+            background-color: rgba(11, 11, 54, 0.947);
+        }
+        footer p{ 
+            margin: 0;
+            padding:3px;
+            text-align: center;
+            color: white;
+        }
+        footer a{
+            color: #f5a425;
+            text-decoration: none;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <!-- Nav Bar Using header Tag -->
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="#" class="gs">
+                    <span class="grade">GRAD</span>SCHOOL
+                </a>
+            </div>
+            <nav>
+                <ul class="navcls">
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#s2">ABOUT US</a></li>
+                    <li><a href="#s4">COURSE</a></li>
+                    <li><a href="#s5">CONTACT</a></li>
+                    <li><a href="https://www.linkedin.com/in/abhinavsaivannam/">EXTERNAL</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+
+
+
+
+
+
+
+    <!-- Home Section -->
+    <section class="home" id="home">
+        <div class="homevideo">
+            <video autoplay muted loop>
+                <source src="bgimgs/course-video.mp4" type="video/mp4">
+            </video>
+            <div class="home1">
+                <h6>Graduate School of Management</h6>
+                <h1 class="h1"><span>YOUR</span> CLASSROOM</h1>
+                <div class="scroll-to-section btn1">
+                    <a href="#s2" class="btn1a">Discover more</a>
+                </div>   
+            </div>
+        </div>
+        <div class="home2">
+            <div class="home2a">
+                <div class="hm2a">
+                    <img src="icons/pen1.jpg" alt="" class="ic1">
+                    <span class="sp1">All Courses</span>
+                </div>
+                <p class="p1">Curabitur id eros vehicula, 
+                    tincidunt libero eu, lobortis mi. 
+                    In mollis eros a posuere imperdiet. 
+                    Donec maximus elementum ex. Cras convallis 
+                    ex rhoncus, laoreet libero eu, vehicula libero.
+                </p>
+                <!-- <a href="" class="scroll-to-section">More Info</a> -->
+                <div class="scroll-to-section"><a href="#section2">More Info.</a></div>
+            </div>
+            <div class="home2b">
+                <div class="hm2b">
+                    <img src="icons/cap1.png" alt="" class="ic2">
+                    <span class="sp2">All Courses</span>
+                </div>
+                <p class="p2">Curabitur id eros vehicula, 
+                    tincidunt libero eu, lobortis mi. 
+                    In mollis eros a posuere imperdiet. 
+                    Donec maximus elementum ex. Cras convallis 
+                    ex rhoncus, laoreet libero eu, vehicula libero.
+                </p>
+                <!-- <a href="#">Details</a> -->
+                <div class="scroll-to-section"><a href="#section3">Details</a></div>
+            </div>
+            <div class="home2c">
+                <div class="hm2c">
+                    <img src="icons/book1.png" alt="" class="ic3">
+                    <span class="sp3">All Courses</span>
+                </div>
+                <p class="p3">Curabitur id eros vehicula, 
+                    tincidunt libero eu, lobortis mi. 
+                    In mollis eros a posuere imperdiet. 
+                    Donec maximus elementum ex. Cras convallis 
+                    ex rhoncus, laoreet libero eu, vehicula libero.
+                </p>
+                <!-- <a href="#">More Info</a> -->
+                <div class="scroll-to-section"><a href="#section4">Read More</a></div>
+            </div>
+        </div> 
+    </section>
+
+
+
+
+
+    
+
+
+
+    <!-- Section 2 babout Courses -->
+    <section class="s2" id="s2">
+        <div class="s2a">
+            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                <!-- Indicators -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <!-- Slides -->
+                 <!-- Slide 1 -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active" style="width: 100%; height: 100vh;">
+                        <div class="s21" style="display: flex;">
+            
+                            <img src="../s2/choose-us-image-01.png" class="d-block" style="width:350px; height: 350px;" alt="Slide 1">
+                            <div class="s21a">
+                                <h3>Best Education</h3>
+                                <p>Grad School is free educational HTML template with Bootstrap 4.5.2 CSS layout. Feel free to use it for educational or commercial purposes. You may want to make <a href="" class="as2">a little donation</a> to TemplateMo. Please tell your friends about us. Thank you.</p>
+                            </div>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Best Education</h5> 
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="carousel-item" style="width: 100%; height: 100vh;">
+                        <div class="s22" style="display: flex;">
+            
+                            <img src="../s2/choose-us-image-02.png" class="d-block" style="width:350px; height: 350px;" alt="Slide 1">
+                            <div class="s21b">
+                                <h3>Top Level</h3>
+                                <p>You can modify this HTML layout by editing contents and adding more pages as you needed. Since this template has options to add dropdown menus, you can put many HTML pages.</p>
+                                <p>Suspendisse tincidunt, magna ut finibus rutrum, libero dolor euismod odio, nec interdum quam felis non ante.</p>
+                            </div>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Top Management</h5> 
+                            </div>
+                        </div>
+                    </div>
+                    <!--Slide 3-->
+                    <div class="carousel-item" style="width: 100%; height: 100vh;">
+                        <div class="s23" style="display: flex;">
+                            <img src="../s2/choose-us-image-03.png" class="d-block" style="width:350px; height: 350px;" alt="Slide 1">
+                            <div class="s21c">
+                                <h3>Quality Meating</h3>
+                                <p>You are NOT allowed to redistribute this template ZIP file on any template collection website. However, you can use this template to convert into a specific theme for any kind of CMS platform such as WordPress. For more information, you shall <a href="https://www.linkedin.com/in/abhinavsaivannam/" class="as3">contact TemplateMo</a> now.</p>
+                            </div>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Quality Meating</h5> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+ 
+
+
+
+
+
+
+    <!-- Section 3 -->
+    <!-- Course Registration -->
+    <section class="s3" id="s3">
+        <div class="s31">
+            <h1>Take <span style="color: #f5a425;">any Online Course</span> and win $326 for your next class</h1>
+            <div class="formbox">
+                <p>Register your free account and 
+                    get immediate access to online courses
+                </p>
+                <form action="" class="forms">
+                    <input type="text" class="itext" placeholder="Your Name">
+                    <input type="email" class="iemail" placeholder="Your Email">
+                    <input type="text" class="inum" placeholder="Your Phone Number">
+                    <button class="btn">Get it Now</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Section 4 -->
+     <!-- Choose Your Course -->
+    <section class="s4" id="s4">
+        <div class="s41">
+            
+            <div class="container py-5">
+                <h3 class="h3course">Choose Your Course</h3>
+            
+                <div id="courseCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                    
+                        <!-- Slide 1 -->
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-md-2" style="margin-left:200px;">
+                                    <div class="card">
+                                        <img src="courses/courses-02.jpg" class="card-img-top" alt="Business World">
+                                        <div class="card-body">
+                                            <h5 class="card-title">BUSINESS WORLD</h5>
+                                            <p class="card-text">Quisque cursus augue ut velit dictum, quis volutpat enim blandit. Maecenas a lectus ac ipsum porta.</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <img src="courses/author-02.png" alt="Author" class="rounded-circle" width="30">
+                                                <a href="#" class="text" style="color: #605d5dc3;">Free></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="card">
+                                        <img src="courses/courses-03.jpg" class="card-img-top" alt="Media Technology">
+                                        <div class="card-body">
+                                            <h5 class="card-title">MEDIA TECHNOLOGY</h5>
+                                            <p class="card-text">Pellentesque ultricies diam magna, auctor cursus lectus pretium nec. Maecenas finibus.</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <img src="courses/author-03.png" alt="Author" class="rounded-circle" width="30">
+                                                <a href="#" class="text ">Pay></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="card">
+                                        <img src="courses/courses-04.jpg" class="card-img-top" alt="Communications">
+                                        <div class="card-body">
+                                            <h5 class="card-title">COMMUNICATION</h5>
+                                            <p class="card-text">Download free images and videos for your websites by visiting Unsplash Maecenas finibus and Pixabay.</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <img src="courses/author-04.png" alt="Author" class="rounded-circle" width="30">
+                                                <a href="#" class="text" style="color: #605d5dc3;">Free></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="card">
+                                        <img src="courses/courses-05.jpg" class="card-img-top" alt="Business Ethics">
+                                        <div class="card-body">
+                                            <h5 class="card-title">BUSINESS ETHICS</h5>
+                                            <p class="card-text">Pellentesque ultricies diam magna, auctor cursus lectus pretium nec. Maecenas finibus lobortis enim.</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <img src="courses/author-05.png" alt="Author" class="rounded-circle" width="30">
+                                                <a href="#" class="text ">Pay></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                        </div>
+                    
+                        <!-- Slide 2 -->
+                        <div class="carousel-item">
+                            <div class="row">
+
+                                <div class="col-md-2" style="margin-left:200px;">
+                                    <div class="card">
+                                        <img src="courses/courses-02.jpg" class="card-img-top" alt="Marketing">
+                                        <div class="card-body">
+                                            <h5 class="card-title">WEB DEVELOPMENT</h5>
+                                            <p class="card-text">Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vivamus suscipit.</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <img src="courses/author-02.png" alt="Author" class="rounded-circle" width="30">
+                                                <a href="#" class="text" style="color: #605d5dc3;">Free></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="card">
+                                        <img src="courses/courses-03.jpg" class="card-img-top" alt="Leadership">
+                                        <div class="card-body">
+                                            <h5 class="card-title">LEARN HTML CSS</h5>
+                                            <p class="card-text">Donec sollicitudin molestie malesuada. Proin eget tortor risus. Curabitur aliquet quam id dui posuere blandit.</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <img src="courses/author-03.png" alt="Author" class="rounded-circle" width="30">
+                                                <a href="#" class="text ">Pay></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="card">
+                                        <img src="courses/courses-04.jpg" class="card-img-top" alt="Art & Culture">
+                                        <div class="card-body">
+                                            <h5 class="card-title">SOCIAL MEDIA</h5>
+                                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit aliquet elit, eget pulvinar.</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <img src="courses/author-04.png" alt="Author" class="rounded-circle" width="30">
+                                                <a href="#" class="text" style="color: #605d5dc3;">Free></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="card">
+                                        <img src="courses/courses-05.jpg" class="card-img-top" alt="Data Science">
+                                        <div class="card-body">
+                                            <h5 class="card-title">DIGITAL ARTS</h5>
+                                            <p class="card-text">Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur non nulla sit amet nisl tempus convallis.</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <img src="courses/author-05.png" alt="Author" class="rounded-circle" width="30">
+                                                <a href="#" class="text ">Pay></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <!-- Slide 3 -->
+                        <div class="carousel-item" >
+                            <div class="row">
+                                <div class="col-md-2" style="margin-left:200px;">
+                                    <div class="card">
+                                        <img src="courses/courses-05.jpg" class="card-img-top" alt="Graphic Design">
+                                        <div class="card-body">
+                                            <h5 class="card-title">MEDIA STREAMING</h5>
+                                            <p class="card-text">Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vivamus suscipit tortor.</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <img src="courses/author-01.png" alt="Author" class="rounded-circle" width="30">
+                                                <a href="#" class="text" style="color: #605d5dc3;">Free></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="card">
+                                        <img src="courses/courses-01.jpg" class="card-img-top" alt="Software Engineering">
+                                        <div class="card-body">
+                                            <h5 class="card-title">DIGITAL MARKETING</h5>
+                                            <p class="card-text">Quisque cursus augue ut velit dictum, quis volutpat enim blandit. Maecenas a lectus ac.</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <img src="courses/author-01.png" alt="Author" class="rounded-circle" width="30">
+                                                <a href="#" class="text ">Pay></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-2">
+                                    <div class="card">
+                                        <img src="courses/courses-03.jpg" class="card-img-top" alt="Ethical Hacking">
+                                        <div class="card-body">
+                                            <h5 class="card-title">MEDIA TECHNOLOGY</h5>
+                                            <p class="card-text">Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Proin eget tortor risus.</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <img src="courses/author-03.png" alt="Author" class="rounded-circle" width="30">
+                                                <a href="#" class="text ">Pay></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="card">
+                                        <img src="courses/courses-04.jpg" class="card-img-top" alt="Blockchain Technology">
+                                        <div class="card-body">
+                                            <h5 class="card-title">COMMUNICATION</h5>
+                                            <p class="card-text">Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Nulla quis lorem ut libero malesuada.</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <img src="courses/author-04.png" alt="Author" class="rounded-circle" width="30">
+                                                <a href="#" class="text" style="color: #605d5dc3;">Free></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    </div>
+                
+                    <!-- Controls -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#courseCarousel" data-bs-slide="prev"  >
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#courseCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <!-- Section 5 -->
+     <!-- About Grade school -->
+    <section class="s5" id="s5">
+        <div class="s51">
+            <div class="s51a">
+                <p class="s5a1">our presentation is for you</p>
+                <h1 class="s5a2">Watch the video to learn more </h1>
+                <h1 class="s5a3">About Grad School</h1>
+                <br>
+                <p class="s5a4">You are NOT allowed to redistribute 
+                    this template ZIP file on any template collection 
+                    website. However, you can use this template to convert 
+                    into a specific theme for any kind of CMS platform 
+                    such as WordPress. You may contact TemplateMo for details.
+                </p>
+                <br>
+                <p class="s5a5">Suspendisse tincidunt, 
+                    magna ut finibus rutrum, libero dolor euismod odio, 
+                    nec interdum quam felis non ante.
+                </p>
+                <br>
+                <a class="external">EXTERNAL URL</a>
+            </div>
+
+            <div class="thumbnail-container">
+                <a href="bgimgs/course-video.mp4" target="">
+                    <img src="main-thumb.png" alt="Video Thumbnail" class="vt">
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    
+
+
+
+
+    <!-- Section 6 -->
+     <!-- Contact page -->
+    <section class="s6" id="s6">
+        <br> 
+        <h3>Let's Keep In Touch</h3>
+        <br>
+        <div class="s61"> 
+            <div class="formbox2">
+                <form action="">
+                    <input type="text" placeholder="Your Name" class="fname">
+                    <input type="email" placeholder="Your Mail" class="fmail">
+                    <textarea  placeholder="Your message..." rows="8" cols="30" class="fta"></textarea>
+                    <button class="fbtn">SEND MESSAGE YOU</button>
+
+                </form>
+
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.3018027247053!2d78.39954787462925!3d17.493100799752195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91625d9cd1ad%3A0x4455387ad24a675d!2s10000coders!5e0!3m2!1sen!2sin!4v1724134871575!5m2!1sen!2sin" width="500" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            
+        </div>
+    </section>
+
+
+
+
+
+    <!-- footer -->
+    <footer>
+        <p>&copy Copyright 2020 by Grad School | Design: <a href="https://www.linkedin.com/in/abhinavsaivannam/">Abhinav</a></p>
+        <p>Distributed By: <a href="https://www.linkedin.com/in/abhinavsaivannam/">Abhinav</a></p>
+
+    </footer>
+</body>
+</html>

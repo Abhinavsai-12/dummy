@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Carousel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        *{
+            box-sizing: border-box;
+            margin:0;
+            padding:0;
+        }
+        body {
+            /* background-color: #17202A; */
+            background-image: url(../bgimgs/choosing-bg.jpg);
+            color: #FFFFFF;
+            margin: 0;
+            padding: 0;
+            /* position: relative; */
+        }
+
+        h2 {
+            color: #FFFFFF;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            background-color: #1C2833;
+            color: #FFFFFF;
+            border: none;
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card-title {
+            color: orange;
+        }
+
+        .card-text {
+            color: #CCCCCC;
+        }
+
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: orange;
+        }
+        
+
+        .carousel-indicators [data-bs-target] {
+            background-color: orange;
+        }
+        .text{
+            text-decoration:none;
+            color:orange;
+        }
+        .col-md-2{
+            width:18%;
+            height:45%;
+        }.row{
+            width:100%;
+        }
+ 
+        .h3course{
+            width:280px; 
+            text-align: center; 
+            color: white;
+            margin-top: 25px; 
+            margin-left:40%;
+            margin-bottom:15vh;
+            padding: 10px;
+            border:1px solid white;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container py-5">
+    <h3 class="h3course">Choose Your Course</h3>
+
+    <div id="courseCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+                <div class="row">
+                    <div class="col-md-2" style="margin-left:200px;">
+                        <div class="card">
+                            <img src="../courses/courses-02.jpg" class="card-img-top" alt="Business World">
+                            <div class="card-body">
+                                <h5 class="card-title">BUSINESS WORLD</h5>
+                                <p class="card-text">Quisque cursus augue ut velit dictum, quis volutpat enim blandit. Maecenas a lectus ac ipsum porta.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <img src="../courses/author-02.png" alt="Author" class="rounded-circle" width="30">
+                                    <a href="#" class="text" style="color: #605d5dc3;">Free></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="card">
+                            <img src="../courses/courses-03.jpg" class="card-img-top" alt="Media Technology">
+                            <div class="card-body">
+                                <h5 class="card-title">MEDIA TECHNOLOGY</h5>
+                                <p class="card-text">Pellentesque ultricies diam magna, auctor cursus lectus pretium nec. Maecenas finibus.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <img src="../courses/author-03.png" alt="Author" class="rounded-circle" width="30">
+                                    <a href="#" class="text ">Pay></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="card">
+                            <img src="../courses/courses-04.jpg" class="card-img-top" alt="Communications">
+                            <div class="card-body">
+                                <h5 class="card-title">COMMUNICATION</h5>
+                                <p class="card-text">Download free images and videos for your websites by visiting Unsplash Maecenas finibus and Pixabay.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <img src="../courses/author-04.png" alt="Author" class="rounded-circle" width="30">
+                                    <a href="#" class="text" style="color: #605d5dc3;">Free></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="card">
+                            <img src="../courses/courses-05.jpg" class="card-img-top" alt="Business Ethics">
+                            <div class="card-body">
+                                <h5 class="card-title">BUSINESS ETHICS</h5>
+                                <p class="card-text">Pellentesque ultricies diam magna, auctor cursus lectus pretium nec. Maecenas finibus lobortis enim.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <img src="../courses/author-05.png" alt="Author" class="rounded-circle" width="30">
+                                    <a href="#" class="text ">Pay></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+                <div class="row">
+                    
+                    <div class="col-md-2" style="margin-left:200px;">
+                        <div class="card">
+                            <img src="../courses/courses-02.jpg" class="card-img-top" alt="Marketing">
+                            <div class="card-body">
+                                <h5 class="card-title">WEB DEVELOPMENT</h5>
+                                <p class="card-text">Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vivamus suscipit.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <img src="../courses/author-02.png" alt="Author" class="rounded-circle" width="30">
+                                    <a href="#" class="text" style="color: #605d5dc3;">Free></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="card">
+                            <img src="../courses/courses-03.jpg" class="card-img-top" alt="Leadership">
+                            <div class="card-body">
+                                <h5 class="card-title">LEARN HTML CSS</h5>
+                                <p class="card-text">Donec sollicitudin molestie malesuada. Proin eget tortor risus. Curabitur aliquet quam id dui posuere blandit.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <img src="../courses/author-03.png" alt="Author" class="rounded-circle" width="30">
+                                    <a href="#" class="text ">Pay></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="card">
+                            <img src="../courses/courses-04.jpg" class="card-img-top" alt="Art & Culture">
+                            <div class="card-body">
+                                <h5 class="card-title">SOCIAL MEDIA</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit aliquet elit, eget pulvinar.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <img src="../courses/author-04.png" alt="Author" class="rounded-circle" width="30">
+                                    <a href="#" class="text" style="color: #605d5dc3;">Free></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="card">
+                            <img src="../courses/courses-05.jpg" class="card-img-top" alt="Data Science">
+                            <div class="card-body">
+                                <h5 class="card-title">DIGITAL ARTS</h5>
+                                <p class="card-text">Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur non nulla sit amet nisl tempus convallis.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <img src="../courses/author-05.png" alt="Author" class="rounded-circle" width="30">
+                                    <a href="#" class="text ">Pay></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-item" >
+                <div class="row">
+                    <div class="col-md-2" style="margin-left:200px;">
+                        <div class="card">
+                            <img src="../courses/courses-05.jpg" class="card-img-top" alt="Graphic Design">
+                            <div class="card-body">
+                                <h5 class="card-title">MEDIA STREAMING</h5>
+                                <p class="card-text">Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vivamus suscipit tortor.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <img src="../courses/author-01.png" alt="Author" class="rounded-circle" width="30">
+                                    <a href="#" class="text" style="color: #605d5dc3;">Free></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="card">
+                            <img src="../courses/courses-01.jpg" class="card-img-top" alt="Software Engineering">
+                            <div class="card-body">
+                                <h5 class="card-title">DIGITAL MARKETING</h5>
+                                <p class="card-text">Quisque cursus augue ut velit dictum, quis volutpat enim blandit. Maecenas a lectus ac.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <img src="../courses/author-01.png" alt="Author" class="rounded-circle" width="30">
+                                    <a href="#" class="text ">Pay></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-2">
+                        <div class="card">
+                            <img src="../courses/courses-03.jpg" class="card-img-top" alt="Ethical Hacking">
+                            <div class="card-body">
+                                <h5 class="card-title">MEDIA TECHNOLOGY</h5>
+                                <p class="card-text">Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Proin eget tortor risus.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <img src="../courses/author-03.png" alt="Author" class="rounded-circle" width="30">
+                                    <a href="#" class="text ">Pay></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="card">
+                            <img src="../courses/courses-04.jpg" class="card-img-top" alt="Blockchain Technology">
+                            <div class="card-body">
+                                <h5 class="card-title">COMMUNICATION</h5>
+                                <p class="card-text">Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Nulla quis lorem ut libero malesuada.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <img src="../courses/author-04.png" alt="Author" class="rounded-circle" width="30">
+                                    <a href="#" class="text" style="color: #605d5dc3;">Free></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#courseCarousel" data-bs-slide="prev"  >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#courseCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
