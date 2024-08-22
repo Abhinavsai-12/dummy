@@ -125,31 +125,15 @@
         text-align: center;
         margin-top: 5%;
     }
-     
-    .ic1,.ic2,.ic3{ 
-        margin-top:6px;
-        width: 30px; /* Adjusted size for better visibility */
-        height: 30px; /* Adjusted size for better visibility */
-        margin-right: 15px; /* Space between image and text */
-    }
     .sp1,.sp2,.sp3{
         font-size: 16px; 
     }
     .p1,.p2,.p3{
-        display: none;
-        color: white;
-        text-align:center;
         font-size: 14px;
     }
     .home2a a,.home2b a,.home2c a{
         font-size: 12px;
-    }
-    .home2a:hover, .home2b:hover, .home2c:hover{
-        margin-top: 0%;
-        height: 250px;
-        background-color: #f5a425;
-    }
-
+    } 
 
 
 
@@ -176,72 +160,265 @@
             height:100vh;
         }
         .s21,.s22,.s23{
-            width:65%;
-            height:70vh;
+            width:100%;
+            height:100vh;
             display: flex;
-            align-items: center;
-            margin: auto;
-            margin-top:120px;
+            flex-direction:column;
+            margin-top:15px;
         }
         .s21 img{
-            margin:5px; 
+            width:100px;
+            height:100px;
         }
         .s22 img{
-            margin:5px; 
+            width:10px;
+            height:100px; 
         }
         .s23 img{
-            margin:5px; 
+            width:100px;
+            height:100px; 
         }
         .s21a, .s21b, .s21c{
-            color: white; 
-        }
-        .s21a{
-            margin-top:550px;
-        }
-        .s21a h3{
             color: white;
-            font-size:36px;
-            margin-left:80px;
-            font-weight:600;
+            width:100%; 
         }
         .s21b h3{
             color: white;
-            font-size:36px;
-            margin-left:80px;
+            font-size:32px;
+            margin-left:20px;
             font-weight:600;
         }
         .s21c h3{
             color: white;
             font-size:36px;
-            margin-left:80px;
+            margin-left:20px;
             font-weight:600;
-        }
-        .s21a p{
-            color:white;
-            margin-left:80px;
-            margin-top:20px;
-            font-size:16px;
         }
         .s21b p{
             color:white;
-            margin-left:80px;
+            margin-left:20px;
             margin-top:20px;
-            font-size:16px;
+            font-size:14px;
         }
         .s21c p{
             color:white;
-            margin-left:80px;
-            margin-top:20px;
-            font-size:16px;
+            margin-left:20px;
+            font-size:14px;
         }
-        .as2{
-            text-decoration: none;
-            color: rgb(39, 156, 229);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        .s31{
+            
+            display: flex;
+            flex-direction: column;
+        }
+        .s31 h1{
+            width:100%;
+            padding:20px 40px 20px 25px;
+            font-size:28px;
+        }
+        .formbox{
+            width:380px;
+            height:420px;
+            border: 2px solid rgba(255, 255, 255, 0.55) ;
+            background-color: rgba(145, 145, 145, 0.146);
+        }
+
+        .formbox p{ 
+            font: size 22px;
+            padding: 15px;
+        }
+        .forms{
+            margin-top: 25px;
+        }
+        .btn{
+            color: white;
+            padding:5px;
+            background-color: #f5a425;
+            margin-top: 15px;
+            margin-left: 40%;
+        }
+
+
+
+
+
+
+
+
+
+
+
+        .s4{
+            display:none;
+        }
+
+
+
+
+
+
+        
+
+
+        .s51{ 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .s51a{
+            width:95%;
+        }
+        .s5a1{
+            display: none;
+        }
+        .s5a2{ 
+            font-size:26px; 
+        }
+        .s5a3{
+            font-size:26px;
+            padding: 2px;
+        }
+        .s5a4{
+            padding: 2px; 
+            font-size:12px;
+        }
+        .s5a5{ 
+            display:none;
+        }
+        .external{
+            text-decoration:none;
+            margin-top: -50px;
+            padding: 10px;
+            font-size:12px;
+        }
+        /* Center the thumbnail on the page */
+        .thumbnail-container {
+            margin-left:0; 
+            width: 250px; 
+            height:250px; 
+        }
+        .vt{
+            margin-top: 10px;
+            width:250px;
+            height:250px;
+        }
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+        .s6{
+            width:100%;
+            height:120vh;
+        }
+
+        .s6 h3{
+            width:200px;  
+            margin-top: 15px; 
+            margin-left:20%; 
+            font-size:18px;
+            border:1px solid white;
+        }
+
+        .s61{
+            margin-top:10px;
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .formbox2{
+            margin:auto;
+            width:400px;
+            height:380px; 
+        }
+        .fname{
+            width:90%;
+            margin :5%;
+            margin-top:8%;
+        }
+        .fmail{
+            width:90%;
+            margin :5%;
+            margin-top:2%;        
+        }
+        .fta{
+            width:90%;  
+            height:100px;
         } 
-        .as3{
-            text-decoration: none;
-            color: rgb(39, 156, 229);
+        .fbtn{
+            margin:2%;
+            margin-left:5%;
+            padding:10px;
+            font-size:14px;
+            font-weight: 300;
         }
+
+        .s6img{
+            margin-left: 5%;
+            margin-top:10px;
+            width:400px;
+            height:250px
+        }
+
+
+
+
+
+
+        
+        footer{
+            height:8vh;
+            background-color: rgba(11, 11, 54, 0.947);
+        }
+        footer p{ 
+            font-size:10px; 
+        }
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
